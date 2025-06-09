@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodieHub - Online Food Ordering</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- FIXED POSITION NAVIGATION MENU -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <!-- Logo with hover effect -->
+            <a href="#home" class="logo">FoodieHub</a>
+            
+            <!-- Navigation Menu Items -->
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">🏠 Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu" class="nav-link">🍽️ Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#offers" class="nav-link">🎉 Offers</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">ℹ️ About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">📞 Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#cart" class="nav-link cart-btn">
+                        🛒 Cart
+                        <span class="cart-count" id="cartCount">3</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#login" class="nav-link login-btn">👤 Login</a>
+                </li>
+            </ul>
+
+            <!-- Mobile Menu Button -->
+            <div class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENT - Multiple "Pages" to demonstrate fixed navigation -->
+    <div class="content">
+        <!-- Home Page -->
+        <section class="page-section" id="home">
+            <h1>Welcome to FoodieHub</h1>
+            <p>Experience the best online food ordering with our interactive navigation menu. 
+               Scroll down to see the menu change colors and styles. Hover over menu items to see beautiful transitions!</p>
+            
+            <div class="food-grid">
+                <div class="food-card">
+                    <span class="food-emoji">🍕</span>
+                    <h3>Delicious Pizza</h3>
+                    <p>Fresh ingredients, crispy crust</p>
+                </div>
+                <div class="food-card">
+                    <span class="food-emoji">🍔</span>
+                    <h3>Juicy Burgers</h3>
+                    <p>Perfectly grilled, mouth-watering</p>
+                </div>
+                <div class="food-card">
+                    <span class="food-emoji">🍜</span>
+                    <h3>Hot Noodles</h3>
+                    <p>Steaming hot, flavorful broth</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Page -->
+        <section class="page-section" id="menu">
+            <h1>Our Menu</h1>
+            <p>Browse our extensive collection of delicious meals. 
+               Notice how the navigation bar changes its background color from white to orange when you scroll!</p>
+            
+            <div class="food-grid">
+                <div class="food-card">
+                    <span class="food-emoji">🌮</span>
+                    <h3>Tasty Tacos</h3>
+                    <p>$8.99</p>
+                </div>
+                <div class="food-card">
+                    <span class="food-emoji">🥗</span>
+                    <h3>Fresh Salads</h3>
+                    <p>$6.99</p>
+                </div>
+                <div class="food-card">
+                    <span class="food-emoji">🍰</span>
+                    <h3>Sweet Desserts</h3>
+                    <p>$4.99</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Offers Page -->
+        <section class="page-section" id="offers">
+            <h1>Special Offers</h1>
+            <p>Don't miss our amazing deals! The navigation menu font color also changes from dark to white when scrolled. 
+               Try hovering over the menu items to see the gradient background effects!</p>
+        </section>
+
+        <!-- About Page -->
+        <section class="page-section" id="about">
+            <h1>About Us</h1>
+            <p>We're passionate about delivering great food with an even better user experience. 
+               Our navigation menu demonstrates modern web design with smooth transitions and interactive elements.</p>
+        </section>
+
+        <!-- Contact Page -->
+        <section class="page-section" id="contact">
+            <h1>Contact Us</h1>
+            <p>Get in touch for the best food delivery experience. 
+               The navigation menu maintains its fixed position on all pages, ensuring easy access to all sections!</p>
+        </section>
+    </div>
+
+    <!-- Effect Notification -->
+    <div class="effect-notice" id="effectNotice">
+        🎨 Navigation effects active! Scroll to see color changes, hover over menu items for animations!
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
